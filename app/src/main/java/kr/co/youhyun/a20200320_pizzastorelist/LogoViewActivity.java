@@ -19,6 +19,8 @@ public class LogoViewActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_logo_view);
+        setupEvents();
+        setValues();
     }
 
     @Override
