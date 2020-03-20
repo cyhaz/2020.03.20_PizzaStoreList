@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center"
+            app:civ_border_color="#808080"
+            app:civ_border_width="2dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:gravity="center_vertical">
+            // 다이아몬드 이미지
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:src="@drawable/button_black2"
+                android:scaleType="centerCrop"/>
+            // 이름 텍스트
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="가게 이름"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        // 이름 입력
+        <EditText
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="기존 이름"
+            android:inputType="text"
+            android:background="@drawable/gray_button_layout"/>
+
+        <!-- 번호 칸 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:gravity="center_vertical">
+            // 다이아몬드 이미지
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:src="@drawable/button_black2"
+                android:scaleType="centerCrop"/>
+            // 핸드폰번호 텍스트
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="연락처"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        // 핸드폰번호 입력
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/gray_button_layout"
+                android:hint="기존 연락처"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp" />
+
+            <Button
+                android:layout_marginRight="10dp"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center_vertical"
+                android:text="수정"
+                android:textColor="#808080"
+                android:background="@drawable/gray_button_layout"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</layout>
