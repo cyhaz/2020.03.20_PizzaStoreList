@@ -12,7 +12,7 @@
         tools:context=".PizzaStoreDetailActivity">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/profileImg"
+            android:id="@+id/storeLogoImg"
             android:layout_marginTop="20dp"
             android:layout_width="150dp"
             android:layout_height="150dp"
@@ -46,6 +46,7 @@
 
         // 이름 입력
         <TextView
+            android:id="@+id/storeNameTxt"
             android:layout_marginTop="10dp"
             android:paddingLeft="15dp"
             android:layout_width="match_parent"
@@ -87,6 +88,7 @@
             android:layout_marginTop="10dp">
 
             <TextView
+                android:id="@+id/storePhoneTxt"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="전화번호"
@@ -96,6 +98,7 @@
                 android:paddingLeft="15dp" />
 
             <Button
+                android:id="@+id/callBtn"
                 android:layout_marginRight="10dp"
                 android:layout_width="50dp"
                 android:layout_height="35dp"
