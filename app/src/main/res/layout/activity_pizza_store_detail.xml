@@ -11,6 +11,7 @@
         android:padding="20dp"
         tools:context=".PizzaStoreDetailActivity">
 
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/storeLogoImg"
             android:layout_marginTop="20dp"
@@ -56,58 +57,67 @@
             android:textColor="#000000"
             android:textSize="30sp"/>
 
-
-
-        <!-- 번호 칸 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingTop="30dp"
-            android:gravity="center_vertical">
-            // 다이아몬드 이미지
-            <ImageView
-                android:layout_width="7dp"
-                android:layout_height="7dp"
-                android:src="@drawable/button_black2"
-                android:scaleType="centerCrop"/>
-            // 핸드폰번호 텍스트
-            <TextView
+            android:paddingTop="30dp">
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="7dp"
-                android:text="Call"
-                android:textSize="20sp"/>
-        </LinearLayout>
+                android:orientation="vertical">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    // 다이아몬드 이미지
+                    <ImageView
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:src="@drawable/button_black2"
+                        android:scaleType="centerCrop"/>
+                    // 핸드폰번호 텍스트
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:text="Call"
+                        android:textSize="20sp"/>
+                </LinearLayout>
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/storePhoneTxt"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="전화번호"
+                    android:gravity="center_vertical"
+                    android:textSize="30sp"
+                    android:textColor="#000000"
+                    android:paddingLeft="15dp" />
+
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/storePhoneTxt"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="전화번호"
-                android:gravity="center_vertical"
-                android:textSize="30sp"
-                android:textColor="#000000"
-                android:paddingLeft="15dp" />
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/callBtn"
                 android:layout_marginRight="10dp"
-                android:layout_width="50dp"
-                android:layout_height="35dp"
-                android:layout_gravity="right|center_vertical"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
                 android:text="전화"
+                android:textSize="20dp"
                 android:textColor="#000000"
                 android:background="@drawable/gray_button_layout"/>
 
-        </FrameLayout>
+        </LinearLayout>
+
 
     </LinearLayout>
 
