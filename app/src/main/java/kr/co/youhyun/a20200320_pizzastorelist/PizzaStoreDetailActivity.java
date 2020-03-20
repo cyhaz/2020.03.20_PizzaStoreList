@@ -39,6 +39,11 @@ public class PizzaStoreDetailActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
 
+//                크게 보는 액티비티로 이동 => 봐야할 이미지의URL만 전달
+                Intent intent = new Intent(mContext, LogoViewActivity.class);
+                intent.putExtra("logoUrl", store.getLogoUrl());
+                startActivity(intent);
+
             }
         });
 
